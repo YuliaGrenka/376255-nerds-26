@@ -2,9 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>nerd's</title>
+    <title>Студия nerd's</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
+    <!--Шапка-->
     <header>
       <nav>
         <img src="img/nerds-logo.svg" width="160px" height="67px"  alt="Логотип nёrds">
@@ -21,10 +23,11 @@
         </ul>
       </nav>
     </header>
+    <!--Контент-->
     <main>
-      <h1>Студия Nёrd's</h1>
+      <h1 class="visually-hidden">Студия Nёrd's</h1>
       <section>
-        <h2>Общее описание</h2>
+        <h2 class="visually-hidden">Общее описание</h2>
         <ul>
           <li>
             <p>Долго, дорого, скрупулезно.</p>
@@ -50,7 +53,7 @@
         </div>
       </section> 
       <section> 
-        <h2>Предлагаемые услуги</h2>
+        <h2 class="visually-hidden">Предлагаемые услуги</h2>
         <ul>
           <li>
             <img src="img/illustration-1.png" width="300px" height="146px" alt="Веб-сайты">
@@ -73,7 +76,7 @@
         </ul>               
       </section> 
       <section> 
-        <h2>О нас</h2>    
+        <h2 class="visually-hidden">О нас</h2>    
         <div>
           <p>Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>  
@@ -109,8 +112,10 @@
       </section>
 
     </main>
+    <!--Подвал-->
     <footer>
       <section>
+        <h2 class="visually-hidden">Наши контакты</h2>
         <div>
           <h3>NёRDS DESIGN STUDIO</h3>
           <p>
@@ -123,13 +128,13 @@
       </section>      
       <ul>
         <li>
-          <a href="https://vk.com/" style="background-color: #e1e1e1;"></a>
+          <a href="https://vk.com/" style="background-color: #e1e1e1;">Вконтакте</a>
         </li>
         <li>
-          <a href="https://www.facebook.com/" style="background-color: #e1e1e1;"></a>
+          <a href="https://www.facebook.com/" style="background-color: #e1e1e1;">Фейсбук</a>
         </li>
         <li>
-          <a href="https://www.instagram.com/" style="background-color: #e1e1e1;"></a>
+          <a href="https://www.instagram.com/" style="background-color: #e1e1e1;">Инстаграмм</a>
         </li>
       </ul>  
       <p>
@@ -138,5 +143,21 @@
       </p>  
     </footer>
     <!--Форма обратной связи-->
+    <section>
+      <h2>Напишите нам</h2>
+      <button type="button" title="Закрыть">Закрыть</button>
+      <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+        <label for="name">Ваше имя 
+          <input type="text" name="name" value="" placeholder="Имя Фамилия" id="name">
+        </label> 
+        <label for="email">Ваш e-mail 
+          <input type="text" name="email" value="" placeholder="email@example.com" id="email">
+        </label>
+        <label for="message">Текст письма 
+          <textarea type="text" name="message" value="" placeholder="В свободной форме" id="message" rows="5"></textarea>
+        </label>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>    
   </body>
 </html>   
