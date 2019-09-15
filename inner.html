@@ -58,19 +58,35 @@
           <fieldset>
             <legend>Сетка:</legend>
             <ul>
-              <li><label for="adaptive"><input type="radio" name="grid" value="adaptive" id="adaptive" checked>Адаптивная</label></li>
-              <li><label for="fix"><input type="radio" name="grid" value="fix" id="fix">Фиксированная</label></li>
-              <li><label for="flex"><input type="radio" name="grid" value="flex" id="flex">Резиновая</label></li>
+              <li>
+                <input type="radio" name="grid" value="adaptive" id="adaptive" checked><label for="adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid" value="fix" id="fix"><label for="fix">Фиксированная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid" value="flex" id="flex"><label for="flex">Резиновая</label>
+              </li>
             </ul>
           </fieldset>
           <fieldset>
             <legend>Особенности:</legend>
             <ul>
-              <li><label for="slider"><input type="checkbox" name="slider" id="slider" checked>Слайдер</label></li>
-              <li><label for="advantages"><input type="checkbox" name="advantages" id="advantages">Блок преимуществ</label></li>
-              <li><label for="news"><input type="checkbox" name="news" id="news" checked>Новости</label></li>
-              <li><label for="gallery"><input type="checkbox" name="gallery" id="gallery">Галерея</label></li>
-              <li><label for="trash"><input type="checkbox" name="trash" id="trash">Корзина</label></li>
+              <li>
+                <input type="checkbox" name="slider" id="slider" checked><label for="slider">Слайдер</label>
+              </li>
+              <li>
+                <input type="checkbox" name="advantages" id="advantages"><label for="advantages">Блок преимуществ</label>
+              </li>
+              <li>
+                <input type="checkbox" name="news" id="news" checked><label for="news">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" name="gallery" id="gallery"><label for="gallery">Галерея</label>
+              </li>
+              <li>
+                <input type="checkbox" name="trash" id="trash"><label for="trash">Корзина</label>
+              </li>
             </ul>
           </fieldset>    
           <button type="submit">Показать</button>
@@ -160,15 +176,17 @@
       <h2>Напишите нам</h2>
       <button type="button" title="Закрыть">Закрыть</button>
       <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-        <label for="name">Ваше имя 
-          <input type="text" name="name" value="" placeholder="Имя Фамилия" id="name">
-        </label> 
-        <label for="email">Ваш e-mail 
-          <input type="text" name="email" value="" placeholder="email@example.com" id="email">
-        </label>
-        <label for="message">Текст письма 
-          <textarea type="text" name="message" value="" placeholder="В свободной форме" id="message" rows="5"></textarea>
-        </label>
+        <div>
+          <label for="name">Ваше имя</label><input type="text" name="name" value="" placeholder="Имя Фамилия" id="name">
+        </div>
+
+        <div>
+          <label for="email">Ваш e-mail</label><input type="text" name="email" value="" placeholder="email@example.com" id="email">
+        </div>
+
+        <label for="message">Текст письма</label> 
+        <textarea type="text" name="message" value="" placeholder="В свободной форме" id="message" rows="5"></textarea>
+        
         <button type="submit">Отправить</button>
       </form>
     </section>

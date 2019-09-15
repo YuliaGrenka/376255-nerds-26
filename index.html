@@ -147,15 +147,16 @@
       <h2>Напишите нам</h2>
       <button type="button" title="Закрыть">Закрыть</button>
       <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-        <label for="name">Ваше имя 
-          <input type="text" name="name" value="" placeholder="Имя Фамилия" id="name">
-        </label> 
-        <label for="email">Ваш e-mail 
-          <input type="text" name="email" value="" placeholder="email@example.com" id="email">
-        </label>
-        <label for="message">Текст письма 
-          <textarea type="text" name="message" value="" placeholder="В свободной форме" id="message" rows="5"></textarea>
-        </label>
+        <div>
+          <label for="name">Ваше имя</label><input type="text" name="name" value="" placeholder="Имя Фамилия" id="name">
+        </div>
+        
+        <div>
+          <label for="email">Ваш e-mail</label><input type="text" name="email" value="" placeholder="email@example.com" id="email">
+        </div>
+
+        <label for="message">Текст письма</label> 
+        <textarea type="text" name="message" value="" placeholder="В свободной форме" id="message" rows="5"></textarea>
         <button type="submit">Отправить</button>
       </form>
     </section>    
