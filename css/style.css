@@ -15,11 +15,15 @@ a {
 .header {
   background-color: #eee;
   padding-top: 50px;
+  min-width: 1210px;
 }
 
 .container {
   width: 1174px;
   margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: content-box;
 }
 
 .main-nav {
@@ -626,6 +630,9 @@ input[type=checkbox] {
 
 .catalog-list {
   vertical-align: top;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .catalog-item {
@@ -633,9 +640,6 @@ input[type=checkbox] {
   display: inline-block;
   border-top: 35px solid rgba(77, 77, 77, 0.17);
   margin-bottom: 33px;
-}
-.catalog-item:first-child {
-  margin-top: -20px;
 }
 
 .catalog-item:nth-child(2n) {
