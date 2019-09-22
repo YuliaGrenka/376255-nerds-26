@@ -6,6 +6,12 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e4dfb0b6-3c30-4dff-8b82-b75ed75f5e8f" type="text/javascript"></script>
+
+    <script src="js/map.js" type="text/javascript"></script>
   </head>
   <body>
     <!--Шапка-->
@@ -111,18 +117,29 @@
         <section class="examples"> 
           <h2 class="visually-hidden">Примеры готовых веб-сайтов</h2>  
           <div class="examples-list">
-            <a href="#" class="examples-list-item"><img src="img/logo-academy.png" alt="logo_html_Academy"   width="199px" height="68px"></a>
-            <a href="#" class="examples-list-item"><img src="img/logo-borodinski.png" alt="logo_Barbershop_Borodinski"  width="209px" height="90px"></a>
-            <a href="#" class="examples-list-item"><img src="img/logo-pink.png"  alt="logo_PINK" width="185px" height="52px"></a>
-            <a href="#" class="examples-list-item"><img src="img/logo-mishki.png"   alt="logo_MiSHKA" width="173px" height="84px"></a>
+            <div class="examples-list-item">
+              <a href="#" class="examples-list-link"><img src="img/logo-academy.png" alt="logo_html_Academy"   width="199px" height="68px"></a>
+            </div>
+            <div class="examples-list-item">
+              <a href="#" class="examples-list-link"><img src="img/logo-borodinski.png" alt="logo_Barbershop_Borodinski"  width="209px" height="90px"></a>
+            </div>
+            <div class="examples-list-item">
+              <a href="#" class="examples-list-link"><img src="img/logo-pink.png"  alt="logo_PINK" width="185px" height="52px"></a>
+            </div>
+            <div class="examples-list-item">
+              <a href="#" class="examples-list-link"><img src="img/logo-mishki.png"   alt="logo_MiSHKA" width="173px" height="84px"></a>
+            </div>
+            
           </div>
         </section>
       </div>
     </main>
     <!--Подвал-->
     <footer class="footer">
-      <div class="container">
-        <section>
+      <div class="map"></div>
+
+      <div class="container-feedback">  
+        <section class="feedback">
           <h2 class="visually-hidden">Наши контакты</h2>
           <div>
             <h3>NёRDS DESIGN STUDIO</h3>
@@ -131,9 +148,11 @@
               ул. Конюшенная, д. 19/8
             </p>
             <p>тел. +7(812) 275-75-75</p>
-            <a class="button" href="#">Напишите нам</a>
+            <a class="button button-red" href="#">Напишите нам</a>
           </div>
-        </section>      
+        </section> 
+      </div>
+      <div class="container">                        
         <section class="social">      
           <ul class="social-list">
             <li>
