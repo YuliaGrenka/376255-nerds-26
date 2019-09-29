@@ -6,8 +6,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
+    <script src="js/change-values.js" type="text/javascript"></script> 
 
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e4dfb0b6-3c30-4dff-8b82-b75ed75f5e8f" type="text/javascript"></script>
 
@@ -20,7 +23,7 @@
         <nav class="main-nav">
           <a class="main-header-logo" href="index.html">
             <img src="img/nerds-logo.svg" width="160px" height="67px"  alt="Логотип nёrds">
-          </a>  
+          </a>
           <ul class="site-navigation">
             <li><a href="index.html">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
@@ -48,13 +51,14 @@
               <legend class="filters-title">Стоимость:</legend>
               <!-- Ползунок --> 
               <div class="filter-price">
-                <div class="filter-sliderbar"></div>
+                <div class="filter-sliderbar">
+                  <div id="slider"></div>
+                </div>
                 <div class="filter-range-text">
                   <label class="min-price">
-                    от <input type="text" value="0" class="slider-value"> 
-                  </label>  
-                  <label class="max-price">  
-                    до <input type="text" value="15 000" class="slider-value">
+                    от<input type="text" value="0" class="slider-value" data-index="0"> 
+                  </label><label class="max-price">  
+                    до<input type="text" value="15 000" class="slider-value" data-index="1">
                   </label>   
                 </div>  
               </div>
@@ -109,14 +113,16 @@
           <div class="sorter"> 
             <!-- Сортировка -->    
             <span class="sorter-title">Сортировать:</span>
-            <ul class="sorter-list">
-              <li class="sorter-item sorter-item-active"><a href="#">по цене</a></li>
-              <li class="sorter-item"><a href="#">по типу</a></li>
-              <li class="sorter-item"><a href="#">по названию</a></li>
-            </ul>
-            <div class="sorter-control">
-              <button type="button" class="button-down button-down-active"></button>
-              <button type="button" class="button-up"></button>
+            <div class="sorter-filters">
+              <ul class="sorter-list">
+                <li class="sorter-item sorter-item-active"><a href="#">по цене</a></li>
+                <li class="sorter-item"><a href="#">по типу</a></li>
+                <li class="sorter-item"><a href="#">по названию</a></li>
+              </ul>
+              <div class="sorter-control">
+                <button type="button" class="arrow arrow-down down-active"></button>
+                <button type="button" class="arrow arrow-up"></button>
+              </div>
             </div>
           </div>
           <div class="catalog-list">
@@ -170,11 +176,11 @@
             </div>
           </div>
 
-          <ul>
-            <li><a>1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">Следующая</a></li>
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current"><a>1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
           </ul>    
         </section> 
       </div>
