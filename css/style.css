@@ -24,12 +24,17 @@ a {
   margin-bottom: 80px;
 }
 
-.container {
+.container,
+.container-footer {
   width: 1174px;
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 20px;
   box-sizing: content-box;
+}
+
+.container-footer {
+  position: relative;
 }
 
 .table-description {
@@ -985,21 +990,13 @@ input[type=checkbox] {
 }
 
 .footer {
-  margin-top: 59px;
+  margin-top: 80px;
 }
 
 .map {
   height: 419px;
 }
 
-.container-feedback{
-  position: relative;
-  width: 1174px;
-  margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 20px;
-  box-sizing: content-box;  
-}
 
 .feedback {
   display: block;
@@ -1007,7 +1004,7 @@ input[type=checkbox] {
   position: absolute;
   background-color: #fff;
   box-sizing: border-box;
-  top: -355px;
+  top: -406px;
   left: 20px;
   padding-top: 33px;
   padding-right: 50px;
