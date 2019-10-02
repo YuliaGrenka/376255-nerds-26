@@ -322,7 +322,6 @@ a {
   width: 160px;
 }
 
-
 .services-list {
   display: flex;
   justify-content: space-between;
@@ -333,13 +332,7 @@ a {
 
 .service-item {
   width: 300px;
-  margin-right: 100px;
 }
-
-li.service-item:last-child {
-  margin-right: 0; 
-}
-
 
 .service-item h3 {
   font-size: 24px;
@@ -390,11 +383,11 @@ li.service-item:last-child {
 }
 
 .table-description {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .table-description td{
-  padding-top: 10px;
+  padding-top: 13px;
   line-height: 18px;
 }
 
@@ -402,10 +395,13 @@ li.service-item:last-child {
   font-size: 45px;
   font-weight: bold;
   color: #000;  
-  line-height: 10px;
-  padding-bottom: 30px;
+  line-height: 45px;
   padding-right: 15px;
 }
+sup {
+  top: -12px;
+}
+
 
 .table-title {
   font-size: 16px;
@@ -441,12 +437,11 @@ li.service-item:last-child {
 }
 
 .examples-list-item {
-  display: inline-block;
-  vertical-align: middle;
   width: 285px;
   text-align: center;
 
 }
+
 .examples-list-item:before {
   content: '\00A0';
   height: 52px;
@@ -502,30 +497,24 @@ li.service-item:last-child {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 260px;
+  align-items: center;
 }
 
 .social-list li {
-  display: inline-block;
   width: 78px;
   height: 78px;
   border-radius: 50%;
   background-color: #e1e1e1;
-  margin-right: 13px;
 }
-
-.social-list li:last-child {
-  margin-right: 0px;
-}
-
 
 .social-link {
-  font-size: 0;
   line-height: 34px;
-  display: inline-block;
   width: 78px;
   height: 78px;  
-  border-radius: 50%;  
-  vertical-align: middle;
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
 }
 
 .social-link:hover {
@@ -536,52 +525,8 @@ li.service-item:last-child {
   background-color: #d7373b;  
 }
 
-.vkontakte:before {
-  content: "";
-  color: #e8e8e8;
-  background-image: url('../img/vk-icon.svg');
-  background-repeat: no-repeat;
-  background-size: 27px 16px;
-  background-position: 50% 50%;
-  display: inline-block;  
-  width: 78px;
-  height: 78px;  
-}
-
-.vkontakte:active:before {
-  background-image: url('../img/vk-icon-active.svg');
-}
-
-.facebook:before {
-  content: "";
-  color: #e8e8e8;
-  background-image: url('../img/fb-icon.svg');
-  background-repeat: no-repeat;
-  background-size: 12px 22px;
-  background-position: 50% 50%;
-  display: inline-block;  
-  width: 78px;
-  height: 78px;  
-}
-
-.facebook:active:before {
-  background-image: url('../img/fb-icon-active.svg');
-}
-
-.instagram:before {
-  content: "";
-  color: #e8e8e8;
-  background-image: url('../img/insta-icon.svg');
-  background-repeat: no-repeat;
-  background-size: 21px 21px;
-  background-position: 50% 50%;
-  display: inline-block;  
-  width: 78px;
-  height: 78px;  
-}
-
-.instagram:active:before {
-  background-image: url('../img/insta-icon-active.svg');
+.social-link:active path{
+  fill: #e07275;
 }
 
 .title-inner {
@@ -988,7 +933,6 @@ input[type=checkbox] {
 
 .pagination-list {
   display: flex;
-  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -1091,3 +1035,139 @@ input[type=checkbox] {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/** slider **/
+.ui-slider{
+  position: relative;
+  text-align: left;
+}
+.ui-slider .ui-slider-handle{
+  position: absolute;
+  z-index: 2;
+  width: 4px;
+  height: 4px;
+  border: 14px solid #ffffff;
+  background: #ababab;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 0 0 rgb(171, 171, 171, 0.3);
+  top: 30px;
+  left: 20px;
+  -ms-touch-action: none;
+  touch-action: none;
+
+}
+
+.ui-slider .ui-slider-range{
+  position: absolute;
+  z-index: 1;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+}
+
+.ui-slider.ui-state-disabled .ui-slider-handle,.ui-slider.ui-state-disabled .ui-slider-range{
+  filter: inherit;
+}
+
+.ui-slider-horizontal{
+  height: 2px;
+}
+
+.ui-slider-horizontal .ui-slider-handle{
+  top: -12px;
+  margin-left: -.6em;
+}
+
+.ui-slider-horizontal .ui-slider-range{
+  top: 0;
+  height: 100%;
+}
+
+.ui-slider-horizontal .ui-slider-range-min{
+  left: 0;
+}
+
+.ui-slider-horizontal .ui-slider-range-max{
+  right: 0;
+}
+.ui-slider-vertical{
+  width: .8em;
+  height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle{
+  left: -.3em;
+  margin-left: 0;
+  margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range{
+  left: 0;
+  width: 100%;
+}
+.ui-slider-vertical .ui-slider-range-min{
+  bottom: 0;
+}
+.ui-slider-vertical .ui-slider-range-max{
+  top: 0;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,.ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,.ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor{
+  cursor: text;
+}
+.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor{
+  cursor: pointer;
+}
+
+.ui-widget.ui-widget-content{
+  border: none;
+}
+.ui-widget-content{
+  width: 212px;
+  top: 40px;
+  margin: 0 auto;
+  border: none;
+  background: #d7dcde;
+  color: #333;
+  min-height: 2px;
+}
+.ui-widget-content a{
+  color: #333;
+}
+.ui-widget-header{
+  border: none;
+  background: #00ca74;
+  color: #333;
+  font-weight: bold;
+}
+.ui-widget-header a{
+  color: #333;
+}
+.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default,.ui-button,html .ui-button.ui-state-disabled:hover,html .ui-button.ui-state-disabled:active{
+  border: 10px solid #fff;
+  background: #ababab;
+  font-weight: normal;
+  color: #fff;
+}
+.ui-state-default a,.ui-state-default a:link,.ui-state-default a:visited,a.ui-button,a:link.ui-button, a:visited.ui-button,.ui-button{
+  color: #454545;
+  text-decoration: none;
+}
+.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus,.ui-button:hover,.ui-button:focus{
+  border: 10px solid #fff;
+  background: #ababab;
+  font-weight: normal;
+  color: #2b2b2b;
+}
+.ui-state-hover a,.ui-state-hover a:hover,.ui-state-hover a:link,.ui-state-hover a:visited,.ui-state-focus a,.ui-state-focus a:hover,.ui-state-focus a:link,.ui-state-focus a:visited,a.ui-button:hover,a.ui-button:focus{
+  color: #2b2b2b;
+  text-decoration: none;
+}
+.ui-visual-focus{
+  box-shadow: 0 0 3px 1px rgb(171, 171, 171);
+}
+.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active,a.ui-button:active,.ui-button:active,.ui-button.ui-state-active:hover{
+  border: 10px solid #fff;
+  background: #eeeeee;
+  font-weight: normal;
+  color: #fff;
+}
+
