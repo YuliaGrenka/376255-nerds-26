@@ -585,23 +585,22 @@ sup {
 }
 
 .filter-range-text {
+  display: flex;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: #283136;
   text-transform: uppercase;
 }
+
 .filter-range-text label {
-  display: inline-block;
   width: 50%;  
   font-size: 16px;
 }
 
-
 .max-price {
   text-align: right; 
 }
-
 
 .slider-value {
   width: 60px;
