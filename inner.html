@@ -7,13 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
-    <script src="js/change-values.js"></script> 
 
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e4dfb0b6-3c30-4dff-8b82-b75ed75f5e8f"></script>
-
-    <script src="js/map.js"></script>
   </head>
   <body class="inner-page">
     <!--Шапка-->
@@ -199,7 +193,7 @@
               ул. Конюшенная, д. 19/8
             </p>
             <p>тел. +7(812) 275-75-75</p>
-            <a class="button button-red" href="#">Напишите нам</a>
+            <a class="button button-red button-write" href="#">Напишите нам</a>
           </div>
         </section>                     
         <section class="social"> 
@@ -238,7 +232,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" fill-opacity="0.3" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
         <span class="visually-hidden">Закрыть</span>
       </button>
-      <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="write-form" action="#" method="post">
         <div class="user-dates">
           <p>
             <label for="user-login" class="title-write-form">Ваше имя</label>
@@ -246,7 +240,7 @@
           </p>
           <p>
             <label for="user-email" class="title-write-form">Ваш e-mail</label>
-            <input  class="login-icon-mail" type="text" name="email" value="" placeholder="email@example.com" id="user-email">
+            <input  class="login-icon-mail" type="email" name="email" value="" placeholder="email@example.com" id="user-email">
           </p>
         </div>
 
@@ -256,5 +250,14 @@
         <button type="submit" class="button button-red btn-send">Отправить</button>
       </form>
     </section>  
+    <div class="modal-overlay"></div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
+    <script src="js/change-values.js"></script> 
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e4dfb0b6-3c30-4dff-8b82-b75ed75f5e8f"></script>
+
+    <script src="js/map.js"></script>
+    <script src="js/index.js"></script>    
   </body>
 </html>   
