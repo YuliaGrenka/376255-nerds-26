@@ -20,8 +20,7 @@ function init () {
     ),
 
     myPlacemark = new ymaps.Placemark([59.938657, 30.323273], {
-        hintContent: ' ',
-        balloonContent: ' '
+
     }, {
         // Опции.
         // Необходимо указать данный тип макета.
@@ -33,7 +32,6 @@ function init () {
         iconImageOffset: [-59, -208]
     });
 
-myMap.geoObjects
-    .add(myPlacemark); 
+myMap.geoObjects.add(myPlacemark); 
 
 }
