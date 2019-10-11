@@ -11,25 +11,31 @@
   <body>
     <!--Шапка-->
     <header class="header">
-      <div class="container">
-        <nav class="main-nav">
-          <a class="main-header-logo-unlink">
-            <img src="img/nerds-logo.svg" width="160" height="67"  alt="Логотип nёrds">
-          </a>  
-          <ul class="site-navigation">
-            <li><a href="index.html">Студия</a></li>
-            <li><a href="">Клиенты</a></li>
-            <li><a href="inner.html">Магазин</a></li>
-            <li><a href="">Контакты</a></li>
-          </ul>
-          <ul class="user-navigation">
-            <li>
-              <a class="user-basket" href="#">Корзина</a>
-            </li>
-          </ul>
-        </nav>
-        <h1 class="visually-hidden">Общее описание студии Nerds</h1>
-        <div class="slide-list">
+
+      <nav class="main-nav">
+        <a class="main-header-logo-unlink">
+          <img src="img/nerds-logo.svg" width="160" height="67"  alt="Логотип nёrds">
+        </a>  
+        <ul class="site-navigation">
+          <li><a href="index.html">Студия</a></li>
+          <li><a href="">Клиенты</a></li>
+          <li><a href="inner.html">Магазин</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li>
+            <a class="user-basket" href="#">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+        
+
+    </header>
+    <!--Контент-->
+    <main class="main">
+      <h1 class="visually-hidden">Общее описание студии Nerds</h1>
+      <div class="slide-list">
+        <div class="container">
           <!-- навигация для перехода на слайд -->
           <h2 class="visually-hidden">Преимущества</h2>
           <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -57,11 +63,8 @@
               <a class="button button-slider button-red" href="#">Узнать больше</a>
             </li>
           </ul> 
-        </div>        
-      </div>
-    </header>
-    <!--Контент-->
-    <main class="main">
+        </div>      
+      </div>      
       <div class="container">
         <section class="services"> 
           <h2 class="visually-hidden">Предлагаемые услуги</h2>
@@ -142,12 +145,12 @@
         <section class="feedback">
           <h2 class="visually-hidden">Наши контакты</h2>
           <div>
-            <h3>NёRDS DESIGN STUDIO</h3>
+            <h3>NЁRDS DESIGN STUDIO</h3>
             <p>
               191186, Санкт-Петербург,<br>
-              ул. Конюшенная, д. 19/8
+              ул. Б. Конюшенная, д. 19/8
             </p>
-            <p>тел. +7(812) 275-75-75</p>
+            <p>тел. +7 (812) 275-75-75</p>
             <a class="button button-red button-write" href="writeus.html">Напишите нам</a>
           </div>
         </section>                        
@@ -189,14 +192,14 @@
       </button>
       <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="user-dates">
-          <p>
+          <div>
             <label for="user-login" class="title-write-form">Ваше имя</label>
             <input class="login-icon-user" type="text" name="login" value="" placeholder="Имя Фамилия" id="user-login">
-          </p>
-          <p>
+          </div>
+          <div>
             <label for="user-email" class="title-write-form">Ваш e-mail</label>
             <input  class="login-icon-mail" type="email" name="email" value="" placeholder="email@example.com" id="user-email">
-          </p>
+          </div>
         </div>
 
         <label for="message" class="title-write-form">Текст письма</label> 
