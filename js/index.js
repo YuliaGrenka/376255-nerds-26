@@ -23,7 +23,7 @@ function init () {
   myMap = new ymaps.Map($('.map')[0], {
       // При инициализации карты обязательно нужно указать
       // её центр и коэффициент масштабирования.
-      center: [59.939008, 30.321048], 
+      center: [59.939072, 30.321159], 
       zoom: 17,
       controls: []
   }, {
@@ -33,7 +33,7 @@ function init () {
       '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
   ),
 
-  myPlacemark = new ymaps.Placemark([59.938657, 30.323273], {
+  myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
 
   }, {
       // Опции.
