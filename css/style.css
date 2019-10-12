@@ -23,6 +23,10 @@ a {
   min-width: 1210px;
 }
 
+.inner-page .header {
+  padding-top: 50px; 
+}
+
 .container,
 .container-footer {
   width: 1174px;
@@ -39,6 +43,7 @@ a {
 .container-footer {
   position: relative;
 }
+
 
 .main-nav {
   display: flex;
@@ -576,16 +581,17 @@ sup {
 .filters-title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 20px;
   color: #000000;
   text-transform: uppercase;
   margin-bottom: 8px;
 }
 
+
 .filter-price {
   width: 100%;
-  margin-top: 37px;
-  margin-bottom: 55px;
+  margin-top: 46px;
+  margin-bottom: 61px;
 }
 
 .filter-sliderbar {
@@ -630,6 +636,11 @@ fieldset {
   border: none;
   margin: 0;
 }
+
+.features-sites {
+  margin-top: 5px;
+}
+
 
 .sorter {
   display: flex;
@@ -756,7 +767,7 @@ fieldset {
   padding: 0;
   margin: 0;
   margin-bottom: 30px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .button-filters {
@@ -764,7 +775,7 @@ fieldset {
   height: 50px;
   background-color: #eeeeee;
   color: #000000;
-  margin-top: 35px;
+  margin-top: 42px;
 }
 
 
@@ -787,6 +798,11 @@ input[type=checkbox] {
   cursor: pointer;
 }
 
+.filter-checkbox + label {
+  line-height: 31px;
+  padding-bottom: 8px;
+}
+
 .filter-radio + label:before {
   display: inline-block;
   height: 25px;
@@ -798,7 +814,7 @@ input[type=checkbox] {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   opacity: 0.4;
-  margin-right: 10px;
+  margin-right: 13px;
 }
 
 
@@ -814,7 +830,7 @@ input[type=checkbox] {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   opacity: 0.4;
-  margin-right: 10px; 
+  margin-right: 13px; 
 }
 
 .filter-radio + label:active:before,
@@ -827,12 +843,12 @@ input[type=checkbox] {
   height: 25px;
   width: 25px;
   content: "\00A0";
-  vertical-align: bottom;
+  vertical-align: middle;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   opacity: 0.4;
-  margin-right: 10px;
+  margin-right: 13px;
 }
 
 
@@ -848,7 +864,7 @@ input[type=checkbox] {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   opacity: 0.4;
-  margin-right: 10px; 
+  margin-right: 13px; 
 }
 
 .filter-checkbox + label:active:before,
@@ -1019,7 +1035,7 @@ input[type=checkbox] {
 }
 
 .inner-page .footer {
-  margin-top: 64px;
+  margin-top: 60px;
   padding-left: 14px;
 }
 
