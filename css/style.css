@@ -1034,6 +1034,13 @@ input[type=checkbox] {
   padding-left: 50px;
 }
 
+.feedback-phone {
+  color: #283136;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+
 .feedback h3 {
   font-size: 18px;
   margin-top: 5px;
