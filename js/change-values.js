@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    
+    var mytoddler = document.querySelector(".my-widget-header");
+    mytoddler.classList.remove("my-widget-header");
+
     $("#slider").slider({
         range: true,
         min: 0,
@@ -11,6 +15,7 @@ $(document).ready(function() {
             }
         }
     });
+
     $("input.slider-value").change(function() {
         var $this = $(this);
         $("#slider").slider("values", $this.data("index"), $this.val());
