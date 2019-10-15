@@ -29,7 +29,8 @@ a {
 }
 
 .inner-page .header {
-  padding-top: 50px; 
+  padding-top: 35px; 
+  padding-left: 6px;
 }
 
 .content,
@@ -105,7 +106,8 @@ a {
 }
 
 .site-navigation li {
-  margin-right: 45px;
+  margin-right: 46px;
+
 }
 
 .site-navigation li:last-child {
@@ -509,8 +511,12 @@ a {
 }
 
 .social-slogan {
-  width: 775px;
+  width: 773px;
   padding-top: 8px;
+}
+
+.social-slogan-footer {
+  padding-top: 12px;
 }
 
 .social-slogan p{
@@ -588,6 +594,7 @@ a {
   padding: 0;
   vertical-align: top;
   margin-right: 140px;
+  padding-top: 2px;
 }
 
 .catalog-content {
@@ -595,6 +602,8 @@ a {
   vertical-align: top;
 }
 
+.filters-title-price,
+.filters-title-features,
 .filters-title {
   font-weight: 700;
   font-size: 18px;
@@ -604,6 +613,13 @@ a {
   margin-bottom: 8px;
 }
 
+.filters-title-features {
+  margin-bottom: 17px;
+}
+
+.filters-title-price {
+  letter-spacing: 1px;
+}
 
 .filter-price {
   width: 100%;
@@ -792,7 +808,7 @@ a {
   height: 50px;
   background-color: #eeeeee;
   color: #000000;
-  margin-top: 42px;
+  margin-top: 30px;
 }
 
 
@@ -815,13 +831,12 @@ a {
   display: block;
   font-size: 16px;
   line-height: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
   cursor: pointer;
 }
 
 .filter-checkbox + label {
-  line-height: 31px;
-  padding-bottom: 8px;
+  padding-bottom: 15px;
 }
 
 .filter-radio + label:before {
@@ -835,7 +850,7 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   opacity: 0.4;
-  margin-right: 13px;
+  margin-right: 12px;
 }
 
 .filter-radio + label:hover:before,
@@ -850,7 +865,7 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   opacity: 0.4;
-  margin-right: 13px; 
+  margin-right: 12px; 
 }
 
 .filter-radio + label:active:before,
@@ -1075,7 +1090,7 @@ a {
   padding-top: 47px;
   padding-right: 50px;
   padding-bottom: 45px;
-  padding-left: 50px;
+  padding-left: 49px;
 }
 
 .feedback-phone {
