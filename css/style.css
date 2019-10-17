@@ -1115,6 +1115,10 @@ a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  padding-left: 3px;
+}
+
+.feedback-inner .feedback-phone {
   padding-left: 1px;
 }
 
@@ -1129,9 +1133,14 @@ a {
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 14px;
+  padding-top: 5px;
+  padding-left: 3px;
+}
+
+.feedback-inner p {
   padding-top: 7px;
   padding-left: 2px;
-}
+}  
 
 .feedback .button {
   margin-top: 32px;
