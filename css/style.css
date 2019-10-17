@@ -700,10 +700,18 @@ a {
   width: 400px;
 }
 
+.sorter-control {
+  display: flex;
+  justify-content: space-between;
+}
+
 .sorter-list {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.sorter-control .arrow:nth-child(1) {
+  padding-right: 14px;
 }
 
 .arrow:before {
@@ -713,16 +721,16 @@ a {
   border-left-width: 6px;
   border-left-color: transparent;
   content: ""; 
-  display: inline-block;
-  vertical-align: baseline;
 }
 
 .arrow-up,
 .arrow-down {
-  display: inline-block;
-  vertical-align: top;
   border: 0px;
   background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
 }
 
 .arrow-up:hover:before,
@@ -732,7 +740,6 @@ a {
   border-right-color: transparent;
   border-left-width: 6px;
   border-left-color: transparent;
-
 }
 
 .down-active:before,
@@ -763,7 +770,7 @@ a {
 .sorter-item {
   display: inline-block;
   vertical-align: top;
-  margin-right: 20px;
+  margin-right: 22px;
 }
 .sorter-item:last-child {
   margin-right: 0px;
