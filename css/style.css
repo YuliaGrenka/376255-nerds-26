@@ -29,8 +29,8 @@ a {
 }
 
 .inner-page .header {
-  padding-top: 35px; 
-  padding-left: 6px;
+  padding-top: 50px; 
+  padding-left: 7px;
 }
 
 .content,
@@ -56,8 +56,9 @@ a {
 }
 
 .inner-page .content {
-  padding-left: 15px;
+  padding-left: 21px;
 }
+
 
 .container-footer {
   position: relative;
@@ -96,7 +97,7 @@ a {
   margin: 0;
 }
 
-.site-navigation{
+.site-navigation {
   width: 900px;
   display: flex;
   align-items: baseline;
@@ -119,6 +120,10 @@ a {
   padding-top: 13px;
   padding-left: 43px;
   position: relative;
+}
+
+.user-navigation-inner {
+  padding-top: 1px;  
 }
 
 .site-navigation a,
@@ -675,12 +680,12 @@ a {
   margin-top: 5px;
 }
 
-
 .sorter {
   display: flex;
   justify-content: space-between;
   margin-bottom: 52px;
 }
+
 .sorter-title {
   font-weight: bold;
   font-size: 18px;
@@ -693,7 +698,9 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;  
+  align-items: center;
   width: 360px;
+  margin-top: -2px;
 }
 
 .sorter .sorter-title{
@@ -703,15 +710,16 @@ a {
 .sorter-control {
   display: flex;
   justify-content: space-between;
+  width: 40px;
 }
 
 .sorter-list {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-.sorter-control .arrow:nth-child(1) {
-  padding-right: 14px;
+  width: 272px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .arrow:before {
@@ -731,6 +739,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 0;
+  cursor: pointer;
 }
 
 .arrow-up:hover:before,
@@ -740,6 +749,7 @@ a {
   border-right-color: transparent;
   border-left-width: 6px;
   border-left-color: transparent;
+
 }
 
 .down-active:before,
@@ -770,7 +780,7 @@ a {
 .sorter-item {
   display: inline-block;
   vertical-align: top;
-  margin-right: 22px;
+  margin-right: 20px;
 }
 .sorter-item:last-child {
   margin-right: 0px;
@@ -1020,7 +1030,7 @@ a {
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-top: 30px;
+  margin-top: 32px;
 }
 
 .pagination-item {
@@ -1076,8 +1086,8 @@ a {
 }
 
 .inner-page .footer {
-  margin-top: 60px;
-  padding-left: 14px;
+  margin-top: 59px;
+  padding-left: 20px;
 }
 
 .map {
@@ -1105,23 +1115,26 @@ a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  padding-left: 1px;
 }
 
 .feedback h3 {
   font-size: 18px;
   margin-top: 5px;
-  margin-bottom: 21px;
 }
 
 .feedback p {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 20px;
+  margin-bottom: 14px;
+  padding-top: 7px;
+  padding-left: 2px;
 }
 
 .feedback .button {
-  margin-top: 30px;
+  margin-top: 32px;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -1357,7 +1370,7 @@ input[type="radio"].visually-hidden {
 
 .ui-slider-horizontal .ui-slider-handle {
   top: -10px;
-  margin-left: -.6em;
+  margin-left: -3px;
 }
 
 .ui-slider-horizontal .ui-slider-range {
@@ -1413,7 +1426,7 @@ li.ui-tabs-active .ui-tabs-anchor {
 
 .ui-widget-content {
   width: 212px;
-  top: 40px;
+  top: 38px;
   margin: 0 auto;
   border: none;
   background: #d7dcde;
